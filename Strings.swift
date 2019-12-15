@@ -1,5 +1,3 @@
-
-
 // REVERSED SUBSTRINGS -> String(str.reversed())
 
 var normal = "madam"
@@ -33,7 +31,7 @@ Dictionary -> is a collection of distinct key-valued pairs.
 Set --------> is an unordered list of distinctive values,
 */
 
-// FOUR WAYS TO INITIATE AND ARRAY
+// FOUR WAYS TO INITIATE AN ARRAY
 
 // The full type name
 var numbers = Array<Double>()
