@@ -1,6 +1,6 @@
 
 
-// Reversed Substrings -> String(str.reversed())
+// REVERSED SUBSTRINGS -> String(str.reversed())
 
 var normal = "madam"
 
@@ -19,7 +19,7 @@ but just know that Swift uses it "under the hood" for efficiency. You can simply
 the result into a usable string.
 */
 
-// Replacing Substrings
+// REPLACING SUBSTRINGS
 /*
 We can also modify the middle of strings. A common manipulation method is replacingOccurrences(of: String, with: String), 
 which allows us to swap out one substring with another.
@@ -33,7 +33,7 @@ Dictionary -> is a collection of distinct key-valued pairs.
 Set --------> is an unordered list of distinctive values,
 */
 
-// Three ways to initiate an array
+// FOUR WAYS TO INITIATE AND ARRAY
 
 // The full type name
 var numbers = Array<Double>()
