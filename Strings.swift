@@ -73,12 +73,18 @@ students.append("Tax") // ["Joe", "Ricardo", "Maria", "Elana", "Tax"]
 
 // ADDING MULTIPLE ELEMENTS
 // Adding multiple elements to the end of an array -> ARRAY.append(contentsOf: [string, string, ...])
-students.append(contentsOf: ["First", "Second"]) // ["Joe", "Ricardo", "Maria", "Elana", "Tax", "First, "Second"]
+students.append(contentsOf: ["First", "Second"]) // ["Joe", "Ricardo", "Maria", "Elana", "Tax", "First", "Second"]
 
-// INSERTING ELEMENT
-students.insert("Liam", at: 3)
+// INSERTING ELEMENTS
+// Inserting single elements to a specific index in an array -> ARRAY.insert("string", at: index)
+students.insert("Ryan", at: 2) // ["Joe", "Ricardo", "Ryan", "Maria", "Elana", "Tax", "First", "Second"]
 
+// REMOVING ELEMENTS
+// Removing elements from an array from an specific index -> remove(at:), removeSubrange(_:)
+students.remove(at: 0) //["Ricardo", "Ryan", "Maria", "Elana", "Tax", "First", "Second"]
 
+// Removing the last elements from an array -> removeLast().
+students.removeLast() //["Ricardo", "Ryan", "Maria", "Elana", "Tax", "First"]
 
 
 
