@@ -25,12 +25,6 @@ which allows us to swap out one substring with another.
 let verbose = "We hope you are very excited to learn Swift. It's a very fun and very useful skill. Soon enough, you'll be writing your very own app!"
 let better = verbose.replacingOccurrences(of: "very ", with: "")
 
-/*
-Array ------> is an ordered list of items. It can have repeated values.
-Dictionary -> is a collection of distinct key-valued pairs.
-Set --------> is an unordered list of distinctive values,
-*/
-
 // FOUR WAYS TO INITIATE AN ARRAY
 
 // The full type name
@@ -45,3 +39,55 @@ let differentNumbers = [97.4, 99.0, 100.0]
 // Array that is preinitialized with a fixed number of default values -> Array(repeating: value, count: value)
 var digitCounts = Array(repeating: 0, count: 20)
 
+
+
+// TRIMMING CHARACTERS
+
+var message = "   Be back later!        "
+
+// Removing empty characters from the end of a string.
+// Trimming the end of a string
+while message.last == " " {
+    message.removeLast()
+}
+
+
+// Removing empty characters from the beginning of a string.
+// Trimming the beginning of a string
+while message.first == " " {
+    message.removeFirst()
+}
+
+
+// ARRAYS OF STRINGS
+/*
+To add single elements to the end of an array, use the append(_:) method. 
+Add multiple elements at the same time by passing another array or a sequence of any kind to the append(contentsOf:) method.
+*/
+
+var students = ["Joe", "Ricardo", "Maria", "Elana"]
+
+// ADDING SINGLE ELEMENT
+// Adding single elements to the end of an array -> ARRAY.append(string)
+students.append("Tax") // ["Joe", "Ricardo", "Maria", "Elana", "Tax"]
+
+// ADDING MULTIPLE ELEMENTS
+// Adding multiple elements to the end of an array -> ARRAY.append(contentsOf: [string, string, ...])
+students.append(contentsOf: ["First", "Second"]) // ["Joe", "Ricardo", "Maria", "Elana", "Tax", "First, "Second"]
+
+// INSERTING ELEMENT
+students.insert("Liam", at: 3)
+
+
+
+
+
+
+
+
+// REVIEW
+/*
+Array ------> is an ordered list of items. It can have repeated values.
+Dictionary -> is a collection of distinct key-valued pairs.
+Set --------> is an unordered list of distinctive values,
+*/
