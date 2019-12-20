@@ -1,5 +1,6 @@
-// FOR LOOPS
+// LOOPS
 
+// For Loops
 var Collection = 
 
 // Declaring a for loop
