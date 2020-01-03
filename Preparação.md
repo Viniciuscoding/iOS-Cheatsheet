@@ -130,17 +130,22 @@ struct Course() {                                        struct Course() {
 typealiaese BigInt = Int              typealiases Text = String
 var newIntType: BigInt = 100          var newStringType: Text = "Text is now a String type"
 ```
+### 18. What is Class?
+- It is a keyword used to create a custom user defined datatype. Classes are reference types.
 
-
-
-
-
-
-
-
-
-
-
+### 19. What is the difference between Struct and Class
+```
+|---------------------------------------------|----------------------------------------------|
+|                 **Struct**                  |                 **Class**                    |
+|---------------------------------------------|----------------------------------------------|
+| 1. Value types                              |   1. Reference types                         |
+| 2. Does not allow inheretence               |   2. Allows inheretance                      |
+| 3. Structure variable values are copied     |   3. Variable reference / address is copied  |
+| when passed them as argument to a method    |   when passing them as argument to a method  |
+| 4. Deinitializers are not available         |   5. Deinitializers are available            |
+|---------------------------------------------|----------------------------------------------|
+```
+### 20. What is Property?
 
 
 
