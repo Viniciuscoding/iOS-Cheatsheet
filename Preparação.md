@@ -142,19 +142,73 @@ var newIntType: BigInt = 100          var newStringType: Text = "Text is now a S
 | 2. Does not allow inheretence               |   2. Allows inheretance                      |
 | 3. Structure variable values are copied     |   3. Variable reference / address is copied  |
 | when passed them as argument to a method    |   when passing them as argument to a method  |
-| 4. Deinitializers are not available         |   5. Deinitializers are available            |
+| 4. Deinitializers are not available         |   4. Deinitializers are available            |
+| 5. Passed by value                          |   5. Passed by reference                     |
 |---------------------------------------------|----------------------------------------------|
 ```
 ### 20. What is Property?
+- They are values in a class, structure, or enumeration. It is variable in an object which holds values of that object.
 
+### 21. What are Stored, Static, Computed and Lazy properties?
+- **Stored Properties:** store constant and variable values as part of an instance.
+- **Computed Property:** calculates (rather than store) a value.
+- **Lazy Property:** a property whose memory is allocated when it is accessed or used.
+- **Static Property:** Because static methods belong to the struct itself rather than to instances of that struct, you can't use it to access any non-static properties from the struct.
+Class and structure level properties
+Accessed over Class or Property name
+Only accessible in class or structure level methods
+```
+class Person {
+    static let clothsMass = 0.36  // static property
+    var actualMass = 7.8          // stored property
+    lazy var gravityEarth = 9.8   // lazy property
+    var totalWeight: Double {     // computed property
+        return clothsWeight * actualWeight * gravityEarth
+    }
+}
+```
+# What is function?
+- It is a block of statements that performs some specific task. Functions are global
 
+```
+func name(parameter1, parameter2,...) -> return_type {
+    ... function_body
+}
+```
+# What is a method?
+- It is a function associated to an object (class)
 
+# What are instance methods and type/class methods
+- Instance methods are associated to with objects
+- type or class methods are associated with datatypes
 
+# What is a default values for an input parameter and infinite ones?
+```
+funct classTotalWeight(gravity: Double = 9.8, studentsMass: ...)
+    totalWeight: Double = 0
+    for mass in studentsMass {
+        totalWeight = totalWeight + mass * gravity
+    }
+    return totalWeight
+}
+```
 
+### 000. What are the terms used in inheretence?
 
+superclass	    A class that is inherited from
+subclass	    A class that inherits from another class (the superclass)
+parent class	A class's superclass
+child class	    A class that descended (inherited directly) from a parent class.
+descendant	    A class that inherited from an ancestor
+ancestor	    A class that has child or descendent classes
+root class	    A class with no superclass
+leaf class	    A class with no subclasses
+hierarchy	    A tree of inheritance relationships
 
+### 001. What is Polymorphism?
+- Inheritance, or the ability of one class to take on the properties and methods of a superclass
 
-
-
+### 002. What is Inheretence?
+- It allows one class to take on the properties and methods of another class, as well as add its own functionality
 
 
