@@ -167,7 +167,7 @@ class Person {
     }
 }
 ```
-# What is function?
+### 22. What is function?
 - It is a block of statements that performs some specific task. Functions are global
 
 ```
@@ -175,14 +175,14 @@ func name(parameter1, parameter2,...) -> return_type {
     ... function_body
 }
 ```
-# What is a method?
+### 23. What is a method?
 - It is a function associated to an object (class)
 
-# What are instance methods and type/class methods
+### 24. What are instance methods and type/class methods
 - Instance methods are associated to with objects
 - type or class methods are associated with datatypes
 
-# What is a default values for an input parameter and infinite ones?
+### 25. What is a default values for an input parameter and infinite ones?
 ```
 funct classTotalWeight(gravity: Double = 9.8, studentsMass: ...)
     totalWeight: Double = 0
@@ -192,6 +192,27 @@ funct classTotalWeight(gravity: Double = 9.8, studentsMass: ...)
     return totalWeight
 }
 ```
+### 26. What are Subscripts
+- A shortcut way to access struct / enum / class's collections, sequences and lists 
+```
+class Stack {                                               Example
+    var itemHolder = [0, 1, 2, 3, 4, 5]                     let theStack = Stack()
+    subscript(index: Int) -> Int {                          theStack.itemHolder[5] // returns 5
+        return itemHolder[index]
+    }                                      with subscrit -> theStack[5] // returns 5
+}
+```
+###  27. What is Generic Function?
+- Generic code enables you to write flexible, reusable functions and types that can work with any type, subject to requirements that you define. You can write code that avoids duplication and expresses its intent in a clear, abstracted manner. One of the most powerful features of Swift, and much of the Swift standard library is built with generic code
+```
+func add(a: Int, b: Int) -> Int { return a + b }          \    THIS IS A GENERIC FUNCTION
+func add(a: Float, b: Float) -> Float { return a + b }     --> func add<T>(a: T, b: T) -> T { return a + b }
+func add(a: Double, b: Double) -> Double { return a + b } /                 
+```
+
+### 30. What is Closure? VERY COMPLEX and THERE MANY DIFFERENT ONES!!!! MAKE SURE TO STUDY MORE ABOUT IT!!!!
+
+
 
 ### 000. What are the terms used in inheretence?
 
