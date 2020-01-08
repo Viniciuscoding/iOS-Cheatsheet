@@ -47,9 +47,9 @@ var right: Bool = False
 #### 7. What is Tuple?
 - The process of groupin multiple data type values together as a single variable 
 ```
-let course = ("Swift", 5)    let course = (name: "Swift", version: 5)  let course(name, version) = ("Swift", 5)
-print(course.0) // Swift     print(course.name)    // Swift            print(name)    // Swift
-print(course.1) // 5         print(course.version) // 5                print(version) // 5
+let course = ("Swift", 5)   let course = (name: "Swift", version: 5)  let course(name,version)=("Swift", 5)
+print(course.0) // Swift    print(course.name)    // Swift            print(name)    // Swift
+print(course.1) // 5        print(course.version) // 5                print(version) // 5
 ```
 ### 8. String Interpolation?
 - The process of embedding values to a string
@@ -81,9 +81,9 @@ NOTE: Optional variables must be declared as variable using ```**var**```
 ### 12. Optional Binding vs Guard Binding
 ``` 
 if let unwrapped = swiftVersion {                     guard let unwrapped = swiftVersion else {
-  print("The Swift version is \(unwrapped)")              print(unwrapped) //unwrapped is not accessible here
+  print("The Swift version is \(unwrapped)")              print(unwrapped) //unwrapped is not accessible
 }                                                         return
-print(unwrapped) //unwrapped is not accessible here   } print(unwrapped) //unwrapped is accessible here
+print(unwrapped) //unwrapped is not accessible here   } print(unwrapped) //unwrapped is accessible
 ```
 ### 12. What is Optional Chaining
 ``` let res = anOptional?.subOptional?.subOptional ```
@@ -205,9 +205,9 @@ class Stack {                                               Example
 ###  27. What is Generic Function?
 - Generic code enables you to write flexible, reusable functions and types that can work with any type, subject to requirements that you define. You can write code that avoids duplication and expresses its intent in a clear, abstracted manner. One of the most powerful features of Swift, and much of the Swift standard library is built with generic code
 ```
-func add(a: Int, b: Int) -> Int { return a + b }          \    THIS IS A GENERIC FUNCTION
-func add(a: Float, b: Float) -> Float { return a + b }     --> func add<T>(a: T, b: T) -> T { return a + b }
-func add(a: Double, b: Double) -> Double { return a + b } /                 
+func add(a: Int, b: Int) -> Int { return a + b }        \    THIS IS A GENERIC FUNCTION
+func add(a: Float, b: Float) -> Float { return a + b }   --> func add<T>(a: T, b: T) -> T { return a + b }
+func add(a: Double, b: Double)->Double{ return a + b }  /                 
 ```
 
 ### 30. What is Closure? VERY COMPLEX and THERE MANY DIFFERENT ONES!!!! MAKE SURE TO STUDY MORE ABOUT IT!!!!
