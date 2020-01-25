@@ -9,18 +9,18 @@ Application Lifecycle:
              ↓
          Foreground  
     |------------------|     
-|---|--> Inactive      |
+|---|---> Inactive     |
 |   |        ↑         |
 |   |        |         |
 |   |        ↓         |
 |   |      Active      |
 |   |------------------|
 |      
-|--->  Background
-            ↑
-            |
-            ↓ 
-        Supended
+|----->  Background
+             ↑
+             |
+             ↓ 
+          Supended
 ```
 
 
