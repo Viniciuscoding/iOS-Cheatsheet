@@ -16,11 +16,11 @@ Application Lifecycle:
 |   |      Active      |
 |   |------------------|
 |      
-|----->  Background
+|------> Background
              ↑
              |
              ↓ 
-          Supended
+         Supended
 ```
 
 
