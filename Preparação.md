@@ -232,4 +232,22 @@ hierarchy	    A tree of inheritance relationships
 ### 002. What is Inheretence?
 - It allows one class to take on the properties and methods of another class, as well as add its own functionality
 
+### 31. What is a Subscript?
+- Subscript is a shortcut way to access structs, enums, classes colletions, sequences and lists
+```
+class Stack {
+    let itemHolder = [0, 1, 2, 3, 4]
+    subscript (index: Int) -> Int {
+        return itemHolder[index]
+    }
+}
 
+let aStack = Stack()
+aStack.itemHodler[5]
+
+// USing subscript
+aStack[5]
+```
+
+### 32. What is Generic Functions?
+- A method which is capable of taking different datatypes and perform operations called
