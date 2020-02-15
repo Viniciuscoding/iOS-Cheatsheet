@@ -36,7 +36,7 @@ Navigator Panel keyboard shortcuts cycle through the different navigators.
 ⌘ + 8 = Breakpoint
 ⌘ + 9 = Report
 ```
-The Utility Area toggled with the following keyboard shortcuts:
+The Utility Area keyboard shortcuts:
 ```
 ⌥ + ⌘ + 0 = Show or Hide the Utility Area
 ⌥ + ⌘ + 1 = File Inspector
