@@ -47,8 +47,17 @@ The Utility Area keyboard shortcuts:
 ⌥ + ⌘ + 6 = Connections Inspector
 ```
 
-
-
+```
+ViewWillAppear --------> Appearing ----------> ViewDidAppear
+     ↑                                               |
+     |                                               |
+     |                                               ↓
+Disappeared                                      Appeared
+     ↑                                               |
+     |                                               |
+     |                                               ↓
+ViewDidDisappear <----- Disappearing <------ ViewWillDisappear 
+```
 
 
 
