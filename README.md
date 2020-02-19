@@ -60,12 +60,35 @@ Disappeared                                      Appeared
 ViewDidDisappear <----- Disappearing <------ ViewWillDisappear 
 ```
 
+**UIBotton**
+Buttons have five states that define their appearance:
+```
+1. default            # button is enabled
+2. highlighted        # button was clicked
+3. focused
+4. selected
+5. disabled
+```
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+## Visually Ipaired Users
+This is the information VoiceOver speaks to users. Visually impaired users can rely on VoiceOver to help them use their devices.
+
+## GUIDELINES - SWIFT Internationalization and Localization
+https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i
 
 
 
