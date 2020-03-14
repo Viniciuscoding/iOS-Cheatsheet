@@ -17,25 +17,39 @@ threeInts.remove(at: 3)                                  // [2, 3, 4, 6, 7, 8, 9
 threeInts.removeSubrange(4..<6)                          // [2, 3, 4, 6, 9] -> Remove any value frm the range 4..<6
 threeInts.removeAll(where: { $0 % 2 != 0 })              // [2, 4, 6] -> Remove any value based on the where criteria, odd values
 var threeZeros = Array(repeating: 0, count: 3)           // [0, 0, 0] -> Array with default values 
-var sevenInts = threeZeros + threeInts                   // [0, 0, 0, 2, 4, 6] -> Adding two arrays together
-var intsSeven = threeInts.append(contentsOf: threeZeros) // [2, 4, 6, 0, 0, 0] -> Another way to add arrays together
-var strideSev = threeInts.append(contentsOf: stride(from: 8, through: 12, by: 2))  // [2, 4, 6, 8, 10, 12]
+var sixInts = threeZeros + threeInts                     // [0, 0, 0, 2, 4, 6] -> Adding two arrays together
+var intsSix = threeInts.append(contentsOf: threeZeros)   // [2, 4, 6, 0, 0, 0] -> Another way to add arrays together
+var strideSix = threeInts.append(contentsOf: stride(from: 8, through: 12, by: 2))  // [2, 4, 6, 8, 10, 12]
 
-if let i = intsSeven.firstIndex(of: 0) {                 // [2, 4, 6, 8, 0, 0] -> Replace first existing value with new one
-    students[i] = 8
-}
+intsSix.first or intsSix.first!                          // optional(2) or 2
+intsSix.first(where: { $0 == 0 })                        // 0 -> First value
+intsSix.firstIndex(of: 0)                                // 3 -> First value index
+intsSix.firstIndex(where: { $0 % 2 == 0 })               // 2 -> First value index of even numbers
+if let i = intsSix.firstIndex(of: 0) {                   // [2, 4, 6, 7, 0, 0] -> Replace first existing value with new one
+    students[i] = 7 }
+
+intsSix.lat or intsSix.last!                             // optional(0) or 0
+intsSix.last(where: { $0 % 2 == 0 })                     // 6 -> Last value
+intsSix.lastIndex(of: 0)                                 // 5 -> Last value index
+intsSix.lastIndex(where: { $0 % 2 == 0 })                // 2 -> Last value index of even numbers
+if let i = intsSix.lastIndex(of: 0) {                    // [2, 4, 6, 7, 0, 9] -> Replace last existing value with new one
+    students[i] = 9 }
 
 threeInts.isEmpty                                        // False
 emptyArray.isEmpty                                       // True
 emptyArray.count                                         // 0 -> Number of elements in the array.
 //CAPACITY - total number of elements that the array can contain without allocating new storage
-strideSev.capacity                                       // 7 -> 
-strideSev.capacity                                       // 9
+strideSix.capacity                                       // 7 
+strideSix.capacity                                       // 9
 
+strideSix.contains(0)                                    // False
+intsSix.contains(where: { $0 % 2 == 0 })                 // True
+intsSix.allSatisfy(where: { $0 % 2 == 0 })               // False
 
-
-
-
+intsSix.min()                                            // 0
+intsSix.max()                                            // 9
+var minInt = intsSix.min { a, b in a < b }               // optional(1) -> use minInt! to return 1
+var maxInt = intsSix.max { a, b in a < b }               // optional(9) -> use maxInt! to return 9
 
 
 
