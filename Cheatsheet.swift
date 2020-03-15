@@ -17,7 +17,7 @@ threeInts.remove(at: 3)                                  // [2, 3, 4, 6, 7, 8, 9
 threeInts.removeSubrange(4..<6)                          // [2, 3, 4, 6, 9] -> Remove any value frm the range 4..<6
 threeInts.removeAll(where: { $0 % 2 != 0 })              // [2, 4, 6] -> Remove any value based on the where criteria, odd values
 threeInts.replaceSubrange(1...2, with: repeatElement(0, count: 5))       // [2, 0, 0, 0, 0, 0]
-threeInts.replaceSubrange(1...2, with: [4, 6])           // [2, 4, 6]
+threeInts.replaceSubrange(1...2, with: [4, 6])           // [2, 4, 6] NOTE: stride() does not work for with:
 var threeZeros = Array(repeating: 0, count: 3)           // [0, 0, 0] -> Array with default values 
 var sixInts = threeZeros + threeInts                     // [0, 0, 0, 2, 4, 6] -> Adding two arrays together
 var intsSix = threeInts.append(contentsOf: threeZeros)   // [2, 4, 6, 0, 0, 0] -> Another way to add arrays together
