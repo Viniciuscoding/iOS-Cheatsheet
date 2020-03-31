@@ -1,7 +1,8 @@
 // CHEATSHEET
 
 
-
+// STRINGS
+var aString: String = "Hello"
 
 
 // ARRAYS
