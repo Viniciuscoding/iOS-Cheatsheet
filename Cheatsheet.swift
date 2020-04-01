@@ -2,7 +2,8 @@
 
 
 // STRINGS
-var aString: String = "Hello"
+var aString: String = "Hello"                            // String Literals
+let quotation = """ Please your Majesty? """             // Multiline String Literals
 
 
 // ARRAYS
