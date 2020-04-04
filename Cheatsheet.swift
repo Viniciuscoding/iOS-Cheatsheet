@@ -2,6 +2,8 @@
 
 
 // STRINGS
+var emptyString = ""                                     // empty string literal
+var anotherEmptyString = String()                        // initializer syntax
 var aString: String = "Hello"                            // String Literals
 let quotation = """ Please your Majesty? """             // Multiline String Literals
 
@@ -11,7 +13,6 @@ let blackHeart = "\u{2665}"                              // ♥,  Unicode scalar
 let sparklingHeart = "\u{1F496}"                         // 💖, Unicode scalar U+1F496
 let wiseWords = "\"Imagination is more important than knowledge\" - Einstein"
                // "Imagination is more important than knowledge" - Einstein
-
 
 
 
