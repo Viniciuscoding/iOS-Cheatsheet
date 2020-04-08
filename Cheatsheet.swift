@@ -5,7 +5,7 @@
 // Strings are value types in Swift
 var emptyString = ""                                     // Empty string literal
 var anotherEmptyString = String()                        // Initializer syntax
-emptyString.isEmpty                                      // Check if String is empty                             //
+emptyString.isEmpty                                      // Check if String is empty
 emptyString += "Not empty anymore"                       // String mutability "Not empty anymore"
 // variableString is now "Horse and carriage"
 var aString: String = "Hello"                            // String Literals
