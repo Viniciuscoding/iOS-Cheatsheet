@@ -9,7 +9,7 @@ emptyString.isEmpty                                      // Check if String is e
 emptyString += "Not empty anymore"                       // String mutability "Not empty anymore"
 // variableString is now "Horse and carriage"
 var aString: String = "Hello"                            // String Literals
-let quotation = """ Please your Majesty? """             // Multiline String Literals
+let quotation = """ Please your Majesty? \#(emptyString)""" // Multiline String Literals? Not empty anymore.
 
 // Special Characters
 let dollarSign = "\u{24}"                                // $,  Unicode scalar U+0024
