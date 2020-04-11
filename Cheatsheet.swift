@@ -17,7 +17,9 @@ let blackHeart = "\u{2665}"                              // ♥,  Unicode scalar
 let sparklingHeart = "\u{1F496}"                         // 💖, Unicode scalar U+1F496
 let wiseWords = "\"Imagination is more important than knowledge\" - Einstein"
                // "Imagination is more important than knowledge" - Einstein
-
+let dogChars = ["D","o","g","!","🐶"]
+let dogString = String[dogChars]                         // Concatenates all characters into a string -> "Dog!🐶"
+for character in "Dog!🐶" { print(character) }           // Iterates every character
 
 
 // ARRAYS
