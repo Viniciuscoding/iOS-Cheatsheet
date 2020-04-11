@@ -22,6 +22,24 @@ func linearsearch(_ array: [Int],_ value: Int) -> Int? {
 
 // BINARY SEARCH
 
+func ibinarysearch(_ array: [Int],_ value: Int) -> Int? {
+    var lowerHalf = 0
+    var upperHalf = array.count
+    
+    while lowerHalf < upperHalf {
+        let half = lowerHalf + (upperHalf - lowerHalf) / 2
+        // let brokenHalf = (lowerHalf + upperHalf) / 2 will surpass integer storage capacity once a very large array is given.
+        
+        if array[half] == value {
+            return half
+        } else if array[half] < value {
+            lowerHalf = half + 1
+        } else {
+            upperHalf = half
+        }
+    }
+    return nil
+}
 
 
 
