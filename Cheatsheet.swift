@@ -20,6 +20,12 @@ let wiseWords = "\"Imagination is more important than knowledge\" - Einstein"
 let dogChars = ["D","o","g","!","🐶"]
 let dogString = String[dogChars]                         // Concatenates all characters into a string -> "Dog!🐶"
 for character in "Dog!🐶" { print(character) }           // Iterates every character
+let value1 = 5, value2 = 4                               // Declaring multiple variables in one line
+print("5 times 4 is \(value1 * value2)")                 // INTERPOLATION -> "5 times 4 is 20"
+print(#"6 times 7 is \#(6 * 7)."#)                       // Extended delimiters INTERPOLATION -> "6 times 7 is 42"
+
+
+
 
 
 // ARRAYS
