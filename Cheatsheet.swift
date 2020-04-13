@@ -15,6 +15,7 @@ let quotation = """ Please your Majesty? \#(emptyString)""" // Multiline String 
 let dollarSign = "\u{24}"                                // $,  Unicode scalar U+0024
 let blackHeart = "\u{2665}"                              // ♥,  Unicode scalar U+2665
 let sparklingHeart = "\u{1F496}"                         // 💖, Unicode scalar U+1F496
+let regionalIndicatorForUS = "\u{1F1FA}\u{1F1F8}"        // Unicode for 🇺🇸
 let wiseWords = "\"Imagination is more important than knowledge\" - Einstein"
                // "Imagination is more important than knowledge" - Einstein
 let dogChars = ["D","o","g","!","🐶"]
@@ -23,7 +24,7 @@ for character in "Dog!🐶" { print(character) }           // Iterates every cha
 let value1 = 5, value2 = 4                               // Declaring multiple variables in one line
 print("5 times 4 is \(value1 * value2)")                 // INTERPOLATION -> "5 times 4 is 20"
 print(#"6 times 7 is \#(6 * 7)."#)                       // Extended delimiters INTERPOLATION -> "6 times 7 is 42"
-
+let dogStringCount = dogString.count                     // Count the number of charaters in a string which is 5
 
 
 
