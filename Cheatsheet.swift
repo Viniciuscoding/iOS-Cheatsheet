@@ -28,11 +28,10 @@ let dogStringCount = dogString.count                     // Count the number of 
 dogString[dogString.startIndex]                          // D
 dogString[dogString.endIndex]                            // Error
 dogString[dogString.index(before: dogString.endIndex)]   // 🐶
+dogString.index(after: dogString.endIndex)               // Error
 dogString[dogString.index(after: dogString.startIndex)]  // o
 let index = dogString.index(dogString.startIndex, offsetBy: 3) 
 dogString[index]                                         // !
-
-
 
 
 
