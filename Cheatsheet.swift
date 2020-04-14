@@ -25,6 +25,13 @@ let value1 = 5, value2 = 4                               // Declaring multiple v
 print("5 times 4 is \(value1 * value2)")                 // INTERPOLATION -> "5 times 4 is 20"
 print(#"6 times 7 is \#(6 * 7)."#)                       // Extended delimiters INTERPOLATION -> "6 times 7 is 42"
 let dogStringCount = dogString.count                     // Count the number of charaters in a string which is 5
+dogString[dogString.startIndex]                          // D
+dogString[dogString.endIndex]                            // Error
+dogString[dogString.index(before: dogString.endIndex)]   // 🐶
+dogString[dogString.index(after: dogString.startIndex)]  // o
+let index = dogString.index(dogString.startIndex, offsetBy: 3) 
+dogString[index]                                         // !
+
 
 
 
