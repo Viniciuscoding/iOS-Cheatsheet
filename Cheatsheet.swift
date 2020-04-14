@@ -32,6 +32,8 @@ dogString.index(after: dogString.endIndex)               // Error
 dogString[dogString.index(after: dogString.startIndex)]  // o
 let index = dogString.index(dogString.startIndex, offsetBy: 3) 
 dogString[index]                                         // !
+for index in dogString.indices {                         // Access all indicies of individual characters in a string
+    print("\(dogString[index]) ", terminator: "")}       // "D o g ! 🐶 "
 
 
 
