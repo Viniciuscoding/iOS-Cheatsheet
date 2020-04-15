@@ -34,6 +34,7 @@ let index = dogString.index(dogString.startIndex, offsetBy: 3)
 dogString[index]                                         // !
 for index in dogString.indices {                         // Access all indicies of individual characters in a string
     print("\(dogString[index]) ", terminator: "")}       // "D o g ! 🐶 "
+dogString.insert(contentsOf: " face is ", at: dogString.index(before: dogString.endIndex)) // Dog! face is 🐶"
 
 
 
