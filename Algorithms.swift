@@ -24,7 +24,7 @@ func linearsearch(_ array: [Int],_ value: Int) -> Int? {
 
 func ibinarysearch(_ array: [Int],_ value: Int) -> Int? {
     var midLow = 0
-    var midHigh = array.count
+    var midHigh = array.count - 1
     
     while midLow < midHigh {
         let mid = midLow + (midHigh - midlow) / 2
@@ -35,12 +35,12 @@ func ibinarysearch(_ array: [Int],_ value: Int) -> Int? {
         //     = vn / 2 + (v0 - v0 / 2)
         //     = v0 + (vn - v0) / 2 this makes sure the int storage capacity does not pass the limit 
         
-        if array[half] == value {
-            return half
-        } else if array[half] < value {
-            lowerHalf = half + 1
+        if array[mid] == value {
+            return mid
+        } else if array[mid] < value {
+            midLow = mid + 1
         } else {
-            upperHalf = half
+            midHigh = mid - 1
         }
     }
     return nil
