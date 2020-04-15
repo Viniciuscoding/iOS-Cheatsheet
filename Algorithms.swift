@@ -23,12 +23,17 @@ func linearsearch(_ array: [Int],_ value: Int) -> Int? {
 // BINARY SEARCH
 
 func ibinarysearch(_ array: [Int],_ value: Int) -> Int? {
-    var lowerHalf = 0
-    var upperHalf = array.count
+    var midLow = 0
+    var midHigh = array.count
     
-    while lowerHalf < upperHalf {
-        let half = lowerHalf + (upperHalf - lowerHalf) / 2
-        // let brokenHalf = (lowerHalf + upperHalf) / 2 will surpass integer storage capacity once a very large array is given.
+    while midLow < midHigh {
+        let mid = midLow + (midHigh - midlow) / 2
+        // let mid = (midHigh + midLow) / 2 will surpass int storage capacity once a very large array is given.
+        // This math trick solves it
+        //     = (vn + v0) / 2
+        //     = vn / 2 + v0 / 2  
+        //     = vn / 2 + (v0 - v0 / 2)
+        //     = v0 + (vn - v0) / 2 this makes sure the int storage capacity does not pass the limit 
         
         if array[half] == value {
             return half
