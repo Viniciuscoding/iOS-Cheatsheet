@@ -1,5 +1,8 @@
 // Algorithms
 
+// Recursion: in computer science is a method of solving a problem where the solution depends on
+//            solutions to smaller instances of the same problem
+
 // LINEAR SEARCH
 
 func linearSearch<T: Equatable>(_ a: [T], _ key: T) -> Int? {
@@ -82,7 +85,6 @@ func iFibNum(_ position: Int) -> Int {
         first = second
         second = fib
     }
-    
     return fib
 }
 
@@ -94,3 +96,27 @@ func iFibNum(_ position: Int) -> Int {
 // (i = 4) fib = 1 + 2      ->     first = 2     ->     second = 3
 // fib = 3
 // getFib(4) = 3
+
+
+// BUBBLE SORTING
+func iBubbleSort(_ array: [Int]) -> [Int] {
+    
+    var a = array
+    var l = 0, r = 1, temp = 0
+    let iter = a.count
+    
+    while r <= iter {
+        if a[l] > a[r] {
+            temp = a[r]
+            a[r] = a[l]
+            a[l] = temp
+            r += 1
+            l += 1
+        } else {
+            r += 1
+            l += 1
+        }
+    } 
+    return a
+}
+
