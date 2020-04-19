@@ -101,22 +101,18 @@ func iFibNum(_ position: Int) -> Int {
 // BUBBLE SORTING
 func iBubbleSort(_ array: [Int]) -> [Int] {
     
-    var a = array
-    var l = 0, r = 1, temp = 0
+    var a = array, temp = 0
     let iter = a.count
     
-    while r <= iter {
-        if a[l] > a[r] {
-            temp = a[r]
-            a[r] = a[l]
-            a[l] = temp
-            r += 1
-            l += 1
-        } else {
-            r += 1
-            l += 1
+    for i in 1...iter {
+        for r in 0..<(iter - i) {
+            if a[r] > a[r+1] {
+                temp = a[r+1]
+                a[r+1] = a[r]
+                a[r] = temp
+            }
         }
-    } 
+    }
     return a
 }
 
