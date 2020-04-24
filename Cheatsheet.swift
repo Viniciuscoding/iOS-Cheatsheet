@@ -36,6 +36,12 @@ for index in dogString.indices {                         // Access all indicies 
     print("\(dogString[index]) ", terminator: "")}       // "D o g ! 🐶 "
 dogString.insert(contentsOf: " cute!", at: dogString.index(before: dogString.endIndex)) // Dog! 🐶 cute!"
 dogString.remove(at: dogString.index(before: dogString.endIndex)) // Dog! 🐶 cute" 
+let index = dogString.firstIndex(of: "!") ?? dogString.endIndex // 3
+
+// Substring
+let justDog = dogString[..<index]                        // Dog -> NOTE: justDog became Substring type and is no more String type
+// for long-term storage change type Substring to type String
+String(justDog)                                          // Change Substring type back to String type. 
 
 
 // ARRAYS
