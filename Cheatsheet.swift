@@ -43,6 +43,16 @@ let justDog = dogString[..<index]                        // Dog -> NOTE: justDog
 // for long-term storage change type Substring to type String
 String(justDog)                                          // Change Substring type back to String type. 
 
+// Prefix & Suffix
+let romeoAndJuliet = ["Act 1 Scene 1: Verona, A public place","Act 1 Scene 3: A room in Capulet's mansion",
+                      "Act 1 Scene 4: A street outside Capulet's mansion","Act 2 Scene 1: Outside Capulet's mansion"]
+var act1SceneCount = 0, mansionCount = 0
+for scene in romeoAndJuliet {
+    if scene.hasPrefix("Act 1 ") { act1SceneCount += 1}  // There are 3 "Act 1"
+    if scene.hasSuffix("Capulet's mansion") {            // There are 4 "Capulet's mansion" 
+      mansionCount += 1}
+}
+
 
 
 // ARRAYS
